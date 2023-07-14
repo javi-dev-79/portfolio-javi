@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Javi</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="assets/images/campo.jpg" alt="" />
+        </div>
+        <h1>JAVIER CORDERO</h1>
+        <h2>Programador Junior</h2>
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/javier-cordero-alvarez-042a16182/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola Mundo, soy Javier Cordero.</span> Desde pequeño me ha
+          apasionado la informática y la programación. Desde que descubrí este
+          fascinante mundo, he estado inmerso en él y mi pasión por la
+          programación solo ha crecido con el tiempo.<br />
+
+          Lo que más me emociona de ser programador es la oportunidad de dar
+          vida a mis ideas y crear soluciones tecnológicas que impacten de
+          manera positiva en la vida de las personas. Disfruto enfrentando
+          nuevos desafíos y resolviendo problemas complejos utilizando mi
+          creatividad y habilidades técnicas.<br />
+
+          Mi amor por la programación me ha llevado a tener una mentalidad de
+          aprendizaje constante. Estoy siempre ansioso por aprender nuevas
+          tecnologías, explorar diferentes lenguajes de programación y
+          frameworks, asi como descubrir las últimas tendencias en el sector.
+          Considero que estar al día es fundamental para ser un profesional
+          competitivo y seguir creciendo en esta industria en constante
+          evolución.<br />
+
+          Estoy decidido a desarrollarme y crecer dentro del sector de la
+          programación. Busco un entorno de trabajo estimulante donde pueda
+          colaborar con otros profesionales apasionados y seguir aprendiendo de
+          ellos. Estoy listo para asumir nuevos desafíos y aportar mi entusiasmo
+          y dedicación a cada proyecto en el que participe.<br />
+
+          Si buscas a alguien comprometido, con una pasión innata por la
+          programación, estoy convencido de que puedo ser un valioso activo para
+          tu equipo.<br />
+
+          ¡Espero tener la oportunidad de trabajar juntos y seguir creciendo en
+          este apasionante mundo!
+        </p>
+        <br><br>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Teléfono</strong>
+                618 22 10 89
+              </li>
+              <li>
+                <strong>Email</strong>
+                jacoal79@gmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Santa Clara 10, 2ºB, Arucas
+              </li>
+              <li>
+                <strong></strong>
+                Las Palmas de Gran Canaria
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>JUNIOR</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="assets/pdf/CV-Javier.pdf" download  class="btn">
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </a>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Java</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>PHP</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Autoaprendizaje</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Desarrollo de Aplicaciónes Multiplataforma</h4>
+              <span class="casa">IES El Rincón</span>
+              <span class="fecha">2021 - Actualmente</span>
+              <p>
+                Durante el actual ciclo, he adquirido conocimientos en una amplia gama de lenguajes de programación, incluyendo Java, Python y JavaScript. Además, he aprendido a trabajar con SQL para el manejo de bases de datos y también he adquirido habilidades en el desarrollo web utilizando lenguajes de marcas como HTML y CSS.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Gestión de Alojamientos Turísticos</h4>
+              <span class="casa">CIFP San Cristóbal</span>
+              <span class="fecha">2016 - 2018</span>
+              <p>
+                Durante el transcurso de este ciclo, he afianzado conocimientos de idiomas como inglés y alemán. 
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Guía, Información y Asistencia Turística</h4>
+              <span class="casa">CIFP San Cristóbal</span>
+              <span class="fecha">2014 - 2016</span>
+              <p>
+                En este curso, adquirí conocimientos de idiomas como el inglés y alemán.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+                <h4>Inglés B1</h4>
+                <span class="casa">Cambridge</span>
+                <span class="fecha">2020</span>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Inglés B2</h4>
+                <span class="casa">FULPGC</span>
+                <span class="fecha">2017</span>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Inglés B2.1</h4>
+                <span class="casa">EOI Arucas</span>
+                <span class="fecha">2021</span>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Alemán B1</h4>
+                <span class="casa">EOI Las Palmas II</span>
+                <span class="fecha">2017</span>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Francés A2</h4>
+                <span class="casa">EOI Arucas</span>
+                <span class="fecha">2017</span>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Certificaciones</h3>
+            <div class="item der">
+              <h4>Back Developer</h4>
+              <span class="casa">SPEGC</span>
+              <span class="fecha">2022</span>
+              <p>Programación en Python</p>
+              <br>
+              <span class="casa">Platzi</span>
+              <span class="fecha">2022</span>
+              <p>Curso de Fundamentos de Java Spring Boot</p>
+              <p>Curso de Java Spring</p>
+              <br>
+              <span class="casa">Código Facilito</span>
+              <span class="fecha">2023</span>
+                <p>Curso Profesional de PHP 8</p>
+                <p>Curso de Spring Framework y Spring Boot</p>
+                <p>Curso Profesional de Java</p>
+                <p>Curso Profesional de Python</p>
+                <p>Curso Profesional de Backend</p>
+                <br>
+                <span class="casa">OpenWebinars</span>
+              <span class="fecha">2023</span>
+                <p>Cursos de Symfony 5: Primeros Pasos, Intermedio y Avanzado</p>
+                <p>Curso de CodeIgniter</p>
+                <p>Cursos de PHP: Principiante, Ampliando Conceptos y Creando sitios dinámicos</p>
+
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+                <h4>Front Developer</h4>
+                <span class="casa">Platzi</span>
+                <span class="fecha">2022</span>
+                <p>Curso Básico de JavaScript</p>
+                <p>Curso Práctico de JavaScript</p>
+                <p>Curso Profesional de JavaScript</p>
+                <p>Curso de Introducción a React</p>
+                <p>Curso de Asincronismo con JavaScript</p>
+                <br>
+                <span class="casa">Código Facilito</span>
+                <span class="fecha">2022</span>
+                <p>Curso Avanzado de Bootstrap</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>Otras tecnologías</h4>
+              <span class="casa">Platzi</span>
+                <span class="fecha">2022</span>
+                <p>Curso Profesional de Git y GitHub</p>
+                <p>Curso de Fundamentos de Bases de Datos</p>
+                <p>Curso Básico de Testing en Java</p>
+                <p>Curso de Introducción a Selenium con Python</p>
+                <p>Curso de Fundamentos de Web Scraping con Python y Xpath</p>
+                <br>
+                <span class="casa">MongoDB University</span>
+                <span class="fecha">2022</span>
+                <p>M001: MongoDB Basics</p>
+                <p>M220P: MongoDB for Python Developers</p>
+                <br>
+                <span class="casa">OpenWebinars</span>
+                <span class="fecha">2022</span>
+                <p>Curso de Gitflow profesional</p>
+                <p>Curso de Git</p>
+                <br>
+                <span class="fecha">2023</span>
+                <p>Curso de pruebas unitarias con Mockito</p>
+                <p>Curso de Introducción a pruebas automáticas con JUnit 5</p>
+                <p>Curso de Testing en Java con JUnit 5</p>
+                <br>
+                <span class="casa">Código Facilito</span>
+                <span class="fecha">2023</span>
+                <p>Curso de Docker</p>
+                <p>Curso de comandos básicos para la Terminal</p>
+                <p>Curso Profesional de Base de Datos</p>
+                <br>
+                <p>Entre otros...</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
