@@ -211,6 +211,13 @@ html{
 a {
     text-decoration: none;
 }
+
+.company-link {
+    color: white;
+    background-color: transparent;
+}
+
+
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
