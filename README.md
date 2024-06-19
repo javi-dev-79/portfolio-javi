@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# Personal Portfolio using React + TypeScript + Vite + Tailwind CSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio, created using React, TypeScript, and Tailwind CSS. The goal of this project is to showcase my experience and skills through an interactive and visually appealing website.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **React**: JavaScript library for building user interfaces.
+-   **TypeScript**: Typed superset of JavaScript that improves code quality.
+-   **Tailwind CSS**: Utility-first CSS framework that makes it easy to create responsive and modern designs.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   **Presentation Sections**: Information about me, my experience, skills, and featured projects (In progress).
+-   **Responsive Design**: Optimized to look good on mobile devices, tablets, and desktop computers.
+-   **Interactivity**: Smooth animations and transitions for a pleasant user experience.
+-   **Easy Customization**: Modular and well-organized code structure, making it easy to modify and extend the content.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation and Usage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Follow these steps to run the project on your local environment:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-repository.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd your-repository
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+4. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+5. Open your browser and go to [http://localhost:5173/](http://localhost:5173/) to see the portfolio in action.
+
+# Contributions
+
+Contributions are welcome. If you find any bugs or have any suggestions to improve the project, please feel free to contact me.
+
+# License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
