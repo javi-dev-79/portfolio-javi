@@ -15,20 +15,20 @@ const PersonalData = () => {
     ]
 
     return (
-        <div className='mt-5'>
-            <h1 className='font-righteous text-3xl mb-5 font-bold'>Datos Personales</h1>
+        <div className='mt-5 w-1/2'>
+            <h1 className='font-righteous text-3xl mb-10 font-bold'>Datos Personales</h1>
             <div className='flex'>
                 <div className='mr-5 text-[#1CB698] font-bold'>
                     {items1.map(item1 => (
-                        <h2 className="pb-2" key={item1.text}>{item1.text}</h2>
+                        <h2 className="pb-5" key={item1.text}>{item1.text}</h2>
                     ))}
                 </div>
                 <div>
                     {items2.map(item2 => (
-                        <h2 className="pb-2"  key={item2.text}>{item2.text}</h2>
+                        <h2 className="pb-5"  key={item2.text}>{item2.text}</h2>
                     ))}
                     <a
-                        href=''
+                        href='https://www.linkedin.com/company/hyve-ag/'
                         className='bg-[#1CB698] font-bold rounded-md p-1'
                     >
                         Hyve - The Innovate Company
