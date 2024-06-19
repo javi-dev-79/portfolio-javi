@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define una regla @font-face para usar la fuente */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  /* Ajusta el peso según las variantes disponibles */
+  src: local('Righteous'), url('https://fonts.gstatic.com/s/righteous/v12/3y9uvSNEl8QjkQy5ZSfjRQ.woff2') format('woff2');
+  /* Ajusta la URL del archivo WOFF2 según corresponda */
+}
+
+/* Ahora puedes usar la clase 'font-righteous' en tu proyecto */
+.font-righteous {
+  font-family: 'Righteous', sans-serif;
+  /* Usa la fuente Righteous con un fallback a sans-serif */
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+  /* background: #1e2326; */
+}
+
+.inicio{
+  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+  url(assets/images/fondo.jpg);
+  background-size: cover;
+}
