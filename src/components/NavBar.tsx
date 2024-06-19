@@ -1,4 +1,4 @@
-const NavBar: React.FC = () => {
+const NavBar = () => {
     const items = [
         {
             text: 'Javi',
@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
 
     return (
         <nav>
-            <ul className='text-slate-200 flex gap-6 m-5'>
+            <ul className='flex gap-6 m-5 font-semibold'>
                 {items.map((item, index) => (
                     <li key={index} className={item.textProperties}>
                         <a href={item.href}>{item.text}</a>

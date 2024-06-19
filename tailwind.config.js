@@ -7,6 +7,7 @@ export default {
   theme: {
     fontFamily: {
       'righteous': ['Righteous',],
+      'work-sans': ['Work Sans', 'sans-serif'],
     },
     extend: {},
   },

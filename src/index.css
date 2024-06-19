@@ -20,17 +20,10 @@
   /* Usa la fuente Righteous con un fallback a sans-serif */
 }
 
-* {
-  box-sizing: border-box;
-  font-family: 'Work Sans';
-  margin: 0;
-  padding: 0;
-}
-
 html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
-  /* background: #1e2326; */
+  background: #1e2326;
 }
 
 .inicio{
