@@ -18,20 +18,6 @@ const Hobbies = () => {
     ]
 
     return (
-        // <div className='mt-5 w-1/2'>
-        //     <h1 className='font-righteous text-3xl mb-5 font-bold'>
-        //         Intereses
-        //     </h1>
-        //     <div className='flex flex-col'>
-        //         {hobbyList.map((hobby, index) => (
-        //             <div className='w-24 h-24 bg-[#252A2E] rounded-lg m-0 mr-4 mb-4 flex flex-col items-center justify-center transition-all duration-1000 hover:bg-[#1CB698]' key={index}>
-        //                 <div className='text-4xl'>{hobby.icon}</div>
-        //                 <span>{hobby.text}</span>
-        //             </div>
-        //         ))}
-        //     </div>
-        // </div>
-
         <div className='mt-5 w-1/2'>
             <h1 className='font-righteous text-3xl mb-10 font-bold'>
                 Intereses

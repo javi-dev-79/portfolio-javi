@@ -2,6 +2,7 @@ import AboutMe from './components/AboutMe'
 import Header from './components/Header'
 import NavBar from './components/NavBar'
 import PersonalInfo from './components/PersonalInfo/PersonalInfo'
+import Skills from './components/Skills/Skills'
 
 
 import './index.css'
@@ -14,6 +15,7 @@ function App() {
                 <Header />
                 <AboutMe />
                 <PersonalInfo />
+                <Skills />
             </div>
         </>
     )
