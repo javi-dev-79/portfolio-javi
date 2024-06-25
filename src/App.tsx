@@ -1,4 +1,5 @@
 import AboutMe from './components/AboutMe'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import NavBar from './components/NavBar'
 import PersonalInfo from './components/PersonalInfo/PersonalInfo'
@@ -18,6 +19,7 @@ function App() {
                 <PersonalInfo />
                 <Skills />
                 <Resume />
+                <Footer />
             </div>
         </>
     )
