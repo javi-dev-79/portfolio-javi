@@ -4,7 +4,7 @@ import { FaDownload } from 'react-icons/fa'
 
 const PersonalInfo = () => {
     return (
-        <div>
+        <div className='max-w-[1200px] mx-auto'>
             <div className='flex m-5'>
                 <PersonalData />
                 <Hobbies />

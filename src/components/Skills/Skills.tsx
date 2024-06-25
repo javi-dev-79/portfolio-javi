@@ -2,10 +2,10 @@ import SkillsItem from './components/SkillsItem'
 
 const Skills = () => {
     return (
-        <div className='flex'>
-            <section className='bg-[#252A2E] py-12 px-20 min-w-[1200px] mx-auto' id='skills'>
+        <div id='myskills' className='flex'>
+            <section className='bg-[#252A2E] py-12 w-full'>
                 <div>
-                    <h2 className='text-4xl font-righteous text-center py-5'>
+                    <h2 className='text-5xl font-bold text-center font-righteous p-5 m-10'>
                         Skills
                     </h2>
                     <SkillsItem />

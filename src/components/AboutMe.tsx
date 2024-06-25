@@ -1,7 +1,7 @@
 const AboutMe = () => {
     return (
         <div id="aboutme">
-            <div className='mx-auto p-5 m-10'>
+            <div className='p-5 m-10 max-w-[1200px] mx-auto'>
                 <h2 className='text-5xl font-bold text-center font-righteous p-5 m-10'>
                     Sobre Mí
                 </h2>
