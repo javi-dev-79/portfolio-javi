@@ -2,7 +2,7 @@ import { FaLinkedinIn } from 'react-icons/fa'
 
 const Header = () => {
     return (
-        <div className='bg-[url(./assets/images/fondo.jpg)] inicio flex justify-center'>
+        <div id='home' className='bg-[url(./assets/images/fondo.jpg)] inicio flex justify-center'>
             <div className='bg-[#1e2326] m-32 rounded-xl'>
                 <img
                     src='/src/assets/images/campo.jpg'

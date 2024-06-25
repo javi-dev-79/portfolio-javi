@@ -1,6 +1,6 @@
 const AboutMe = () => {
     return (
-        <div>
+        <div id="aboutme">
             <div className='mx-auto p-5 m-10'>
                 <h2 className='text-5xl font-bold text-center font-righteous p-5 m-10'>
                     Sobre Mí
