@@ -43,25 +43,17 @@ const Education = () => {
         }
     ]
     return (
-        <div className='w-1/2'>
-            <div className='col border-r-2 border-[#252A2E]'>
-                <div className='relative mr-2'>
-                    <h3 className='text-3xl font-righteous mb-10'>
-                        Educación
-                    </h3>
-                    {items.map((item, index) => (
-                        <div className='flex mb-10'>
-                            <EducationItem
-                                key={index}
-                                title={item.title}
-                                institution={item.institution}
-                                period={item.period}
-                                description={item.description || ''}
-                            />
-                        </div>
-                    ))}
-                </div>
-            </div>
+        <div className='w-1/2 col border-r-2 border-[#252A2E]'>
+            <h3 className='text-3xl font-righteous mb-10'>Educación</h3>
+            {items.map((item, index) => (
+                <EducationItem
+                    key={index}
+                    title={item.title}
+                    institution={item.institution}
+                    period={item.period}
+                    description={item.description || ''}
+                />
+            ))}
         </div>
     )
 }
