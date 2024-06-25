@@ -5,16 +5,16 @@ interface EducationItemProps {
     description: string
 }
 
-const EducationItem: React.FC<EducationItemProps> = ({
+export default function EducationItem({
     title,
     institution,
     period,
     description
-}) => {
+}: EducationItemProps) {
     return (
         <div className='flex items-center mb-10'>
             <div className='bg-[#252A2E] border-r-2 border-[#1CB698] p-5 w-full'>
-                <h4 className='text-xl mb-2'>{title}</h4>
+                <h4 className='text-xl mb-2 font-bold'>{title}</h4>
                 <span className='text-[#1CB698] text-xl font-bold block'>
                     {institution}
                 </span>
@@ -28,4 +28,3 @@ const EducationItem: React.FC<EducationItemProps> = ({
     )
 }
 
-export default EducationItem
