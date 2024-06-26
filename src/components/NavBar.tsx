@@ -14,7 +14,7 @@ const NavBar = () => {
 
     return (
         <nav id='navbar'>
-            <ul className='flex gap-6 m-5 font-semibold max-w-[1200px] mx-auto'>
+            <ul className='flex gap-6 p-5 mb-5 font-semibold max-w-[1200px] mx-auto'>
                 {items.map((item, index) => (
                     <li key={index} className={item.textProperties}>
                         <a href={item.href}>{item.text}</a>

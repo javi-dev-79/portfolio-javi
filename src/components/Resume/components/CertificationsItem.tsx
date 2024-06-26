@@ -27,7 +27,7 @@ interface CertificationItemProps {
                                 <div key={index2}>
                                     <span className='block text-[#1CB698] mb-2'>{period.year}</span>
                                     {period.courses.map((course, index3) => (
-                                        <p key={index3} className='mb-1 text-justify text-sm'>{course}</p>
+                                        <p key={index3} className='mb-1 text-sm'>{course}</p>
                                     ))}
                                     <p className="mb-4"></p>
                                 </div>

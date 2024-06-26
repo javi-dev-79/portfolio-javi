@@ -6,7 +6,8 @@ const Skills = () => {
         { text: 'HTML & CSS', progress: '70', cssClass: 'htmlcss' },
         { text: 'Java', progress: '75', cssClass: 'java' },
         { text: 'Python', progress: '75', cssClass: 'python' },
-        { text: 'PHP', progress: '65', cssClass: 'php' }
+        { text: 'PHP', progress: '65', cssClass: 'php' },
+        {text: 'Django', progress: '75', cssClass: 'python'}
     ]
 
     const items2 = [
@@ -14,7 +15,8 @@ const Skills = () => {
         { text: 'Trabajo en Equipo', progress: '90', cssClass: 'trabajo' },
         { text: 'Creatividad', progress: '80', cssClass: 'creatividad' },
         { text: 'Dedicación', progress: '85', cssClass: 'dedicacion' },
-        { text: 'Autoaprendizaje', progress: '95', cssClass: 'autoaprendizaje' }
+        { text: 'Autoaprendizaje', progress: '95', cssClass: 'autoaprendizaje' },
+        {text: 'Atención al detalle', progress: '85', cssClass: 'dedicacion'}
     ]
 
     return (
