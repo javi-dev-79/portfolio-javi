@@ -1,6 +1,6 @@
 const Projects = () => {
     return (
-        <div className='max-w-[1200px] mx-auto mb-16 text-center'>
+        <div id="projects" className='max-w-[1200px] mx-auto mb-16 text-center'>
             <h2 className='text-5xl font-bold text-center font-righteous p-5 m-10'>
                 Proyectos
             </h2>

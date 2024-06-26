@@ -9,7 +9,8 @@ const NavBar = () => {
         { text: 'INICIO', href: '#home' },
         { text: 'SOBRE MI', href: '#aboutme' },
         { text: 'SKILLS', href: '#myskills' },
-        { text: 'CURRICULUM', href: '#resume' }
+        { text: 'CURRICULUM', href: '#resume' },
+        { text: 'PROYECTOS', href: '#projects' },
     ]
 
     return (
