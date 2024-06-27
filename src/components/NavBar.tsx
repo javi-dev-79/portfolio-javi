@@ -55,15 +55,6 @@ const NavBar = () => {
                                 CURRICULUM
                             </a>
                         </li>
-                        <li>
-                            <a
-                                href='#projects'
-                                onClick={toggleMenu}
-                                className='hover:underline'
-                            >
-                                PROYECTOS
-                            </a>
-                        </li>
                     </ul>
                 </nav>
                 <div

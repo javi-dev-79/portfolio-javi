@@ -3,7 +3,6 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import NavBar from './components/NavBar'
 import PersonalInfo from './components/PersonalInfo/PersonalInfo'
-import Projects from './components/PersonalProjects/Projects'
 import Resume from './components/Resume/Resume'
 import Skills from './components/Skills/Skills'
 
@@ -20,7 +19,6 @@ function App() {
                 <PersonalInfo />
                 <Skills />
                 <Resume />
-                <Projects />
                 <Footer />
             </div>
         </>
