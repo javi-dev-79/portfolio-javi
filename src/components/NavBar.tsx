@@ -1,73 +1,84 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react'
 
 const NavBar = () => {
-    const [menuVisible, setMenuVisible] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+    const [menuOpen, setMenuOpen] = useState(false)
 
-    const items = [
-        {
-            text: 'Javi',
-            href: '#navbar',
-            textProperties: 'mr-auto text-4xl font-bold text-[#1CB698] font-righteous'
-        },
-        { text: 'INICIO', href: '#home' },
-        { text: 'SOBRE MI', href: '#aboutme' },
-        { text: 'SKILLS', href: '#myskills' },
-        { text: 'CURRICULUM', href: '#resume' },
-        { text: 'PROYECTOS', href: '#projects' },
-    ];
-
-    const mostrarOcultarMenu = () => {
-        setMenuVisible(!menuVisible);
-    };
-
-    const seleccionar = () => {
-        setMenuVisible(false);
-    };
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 1200);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
 
     return (
-        <nav id='navbar' className='fixed top-0 w-full bg-[#1e2326] shadow-md z-10'>
-            <div className='max-w-[1200px] mx-auto flex items-center justify-between p-5 nav-responsive'>
-                <a href='#navbar' className='mr-auto text-4xl font-bold text-[#1CB698] font-righteous'>
-                    Javi
-                </a>
-                {isMobile ? (
-                    <button onClick={mostrarOcultarMenu} className='menu-toggle text-2xl w-8 h-8 bg-[#1CB698] rounded-md'>
-                        ☰ {/* Icono de hamburguesa */}
-                    </button>
-                ) : (
-                    <ul className='flex gap-6 font-semibold'>
-                        {items.slice(1).map((item, index) => (
-                            <li key={index} className='text-base text-white hover:text-[#1CB698]'>
-                                <a href={item.href}>{item.text}</a>
-                            </li>
-                        ))}
-                    </ul>
-                )}
-            </div>
-            {isMobile && menuVisible && (
-                <ul className='flex flex-col gap-6 p-5 shadow-md float-end'>
-                    {items.slice(1).map((item, index) => (
-                        <li key={index} onClick={seleccionar} className='text-base text-white hover:text-[#1CB698]'>
-                            <a href={item.href}>{item.text}</a>
+        <div className='bg-[#1e2326] text-white'>
+            <header className='container mx-auto p-4 flex justify-between items-center'>
+                <div className='text-3xl font-bold text-[#1CB698]'>
+                    <a href='#navbar'>Javi</a>
+                </div>
+                <nav
+                    className={`lg:flex items-center lg:space-x-6 ${menuOpen ? 'block' : 'hidden'} lg:block`}
+                >
+                    <ul
+                        className={`flex flex-col lg:flex-row lg:space-x-6 lg:space-y-0 space-y-4 ${menuOpen ? 'absolute right-0 mt-4 mr-4 p-4 bg-[#1e2326] rounded-lg' : ''}`}
+                    >
+                        <li>
+                            <a
+                                href='#home'
+                                onClick={toggleMenu}
+                                className='hover:underline'
+                            >
+                                INICIO
+                            </a>
                         </li>
-                    ))}
-                </ul>
-            )}
-        </nav>
-    );
-};
+                        <li>
+                            <a
+                                href='#aboutme'
+                                onClick={toggleMenu}
+                                className='hover:underline'
+                            >
+                                SOBRE MI
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href='#myskills'
+                                onClick={toggleMenu}
+                                className='hover:underline'
+                            >
+                                SKILLS
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href='#resume'
+                                onClick={toggleMenu}
+                                className='hover:underline'
+                            >
+                                CURRICULUM
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href='#projects'
+                                onClick={toggleMenu}
+                                className='hover:underline'
+                            >
+                                PROYECTOS
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div
+                    className='lg:hidden w-8 h-7 bg-[#1CB698] rounded-lg text-center items-center'
+                    onClick={toggleMenu}
+                >
+                    <i
+                        className={`fa-solid fa-${menuOpen ? 'times' : 'bars'} text-lg`}
+                    >
+                        ☰
+                    </i>
+                </div>
+            </header>
+        </div>
+    )
+}
 
-export default NavBar;
+export default NavBar

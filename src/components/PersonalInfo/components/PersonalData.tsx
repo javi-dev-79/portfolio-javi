@@ -16,16 +16,22 @@ const PersonalData = () => {
 
     return (
         <div className='mt-5 w-full md:w-1/2'>
-            <h1 className='font-righteous text-3xl mb-10 font-bold'>Datos Personales</h1>
+            <h1 className='font-righteous text-3xl mb-10 font-bold'>
+                Datos Personales
+            </h1>
             <div className='flex'>
-                <div className='mr-5 text-[#1CB698] font-bold'>
+                <div className='md:mr-5 text-[#1CB698] font-bold'>
                     {items1.map(item1 => (
-                        <h2 className="pb-5" key={item1.text}>{item1.text}</h2>
+                        <h2 className='pb-2 md:pb-5' key={item1.text}>
+                            {item1.text}
+                        </h2>
                     ))}
                 </div>
                 <div>
                     {items2.map(item2 => (
-                        <h2 className="pb-5"  key={item2.text}>{item2.text}</h2>
+                        <h2 className='pb-2 md:pb-5' key={item2.text}>
+                            {item2.text}
+                        </h2>
                     ))}
                     <a
                         href='https://www.linkedin.com/company/hyve-ag/'
