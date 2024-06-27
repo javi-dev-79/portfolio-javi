@@ -8,7 +8,7 @@ const Resume = () => {
                 <h2 className='text-5xl font-bold text-center font-righteous p-16'>
                     Curriculum
                 </h2>
-                <div className='flex'>
+                <div className='md:flex'>
                     <Education />
                     <Certifications />
                 </div>

@@ -18,7 +18,7 @@ const Hobbies = () => {
     ]
 
     return (
-        <div className='mt-5 w-1/2'>
+        <div className='mt-5 w-full md:w-1/2'>
             <h1 className='font-righteous text-3xl mb-10 font-bold'>
                 Intereses
             </h1>

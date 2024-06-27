@@ -5,7 +5,7 @@ const AboutMe = () => {
                 <h2 className='text-5xl font-bold text-center font-righteous p-5 m-10'>
                     Sobre Mí
                 </h2>
-                <p className='leading-6 text-lg text-justify'>
+                <p className='leading-6 text-sm md:text-lg text-justify'>
                     <span className="font-bold text-[#1CB698]">Hola Mundo, soy Javier Cordero.</span>
                     Desde pequeño me ha apasionado la informática y la
                     programación. Desde que descubrí este fascinante mundo, he

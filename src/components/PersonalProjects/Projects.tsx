@@ -1,10 +1,10 @@
 const Projects = () => {
     return (
-        <div id="projects" className='max-w-[1200px] mx-auto mb-16 text-center'>
+        <div id='projects' className='max-w-[1200px] mx-auto mb-16 text-center'>
             <h2 className='text-5xl font-bold text-center font-righteous p-5 m-10'>
                 Proyectos
             </h2>
-            <div className='carousel w-full'>
+            <div className='carousel w-80 h-80 md:w-[800px] md:h-[400px] mb-8 bg-violet-600 items-center'>
                 <div id='item1' className='carousel-item w-full'>
                     <a
                         href='https://github.com/javi-dev-79/portfolio-javi'

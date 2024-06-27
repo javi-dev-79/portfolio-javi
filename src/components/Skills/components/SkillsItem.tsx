@@ -20,8 +20,8 @@ const Skills = () => {
     ]
 
     return (
-        <div className='flex max-w-[1200px] mx-auto'>
-            <div className='w-1/2 max-w-md mx-auto'>
+        <div className='md:flex max-w-[1200px] mx-auto'>
+            <div className='md:w-1/2 w-80 max-w-md mx-auto'>
                 <h3 className='text-2xl font-righteous mb-6'>
                     Technical Skills
                 </h3>
@@ -47,7 +47,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <div className='w-1/2 max-w-md mx-auto'>
+            <div className='md:w-1/2 w-80 max-w-md mx-auto'>
                 <h3 className='text-2xl font-righteous mb-6'>
                     Professional Skills
                 </h3>

@@ -15,7 +15,7 @@ const PersonalData = () => {
     ]
 
     return (
-        <div className='mt-5 w-1/2'>
+        <div className='mt-5 w-full md:w-1/2'>
             <h1 className='font-righteous text-3xl mb-10 font-bold'>Datos Personales</h1>
             <div className='flex'>
                 <div className='mr-5 text-[#1CB698] font-bold'>

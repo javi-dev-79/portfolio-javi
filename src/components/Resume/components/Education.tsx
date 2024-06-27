@@ -43,7 +43,7 @@ const Education = () => {
         }
     ]
     return (
-        <div className='w-1/2 border-r-2 border-[#252A2E] m-5'>
+        <div className='md:w-1/2 border-r-2 border-[#252A2E] m-5'>
             <h3 className='text-3xl font-righteous mb-10'>Educación</h3>
             {items.map((item, index) => (
                 <EducationItem
