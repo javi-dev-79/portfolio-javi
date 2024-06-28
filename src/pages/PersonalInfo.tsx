@@ -1,7 +1,7 @@
 import { FaDownload } from 'react-icons/fa'
 import cv from '../assets/pdf/CV-Javier.pdf'
-import Hobbies from './Hobbies'
-import PersonalData from './PersonalData'
+import Hobbies from '../components/Hobbies'
+import PersonalData from '../components/PersonalData'
 
 const PersonalInfo = () => {
     return (

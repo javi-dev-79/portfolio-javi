@@ -1,18 +1,18 @@
 import { useState } from 'react'
 
+const items = [
+    { text: 'INICIO', itemRef: '#home' },
+    { text: 'SOBRE MI', itemRef: '#aboutme' },
+    { text: 'SKILLS', itemRef: '#myskills' },
+    { text: 'CURRICULUM', itemRef: '#resume' }
+]
+
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
     }
-
-    const items = [
-        { text: 'INICIO', itemRef: '#home' },
-        { text: 'SOBRE MI', itemRef: '#aboutme' },
-        { text: 'SKILLS', itemRef: '#myskills' },
-        { text: 'CURRICULUM', itemRef: '#resume' }
-    ]
 
     return (
         <div className='bg-custom-dark text-white'>
@@ -57,4 +57,3 @@ const NavBar = () => {
 }
 
 export default NavBar
-

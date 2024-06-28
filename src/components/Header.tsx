@@ -3,31 +3,23 @@ import { FaGithub } from 'react-icons/fa'
 import profilePhoto from '../assets/images/campo.jpg'
 import bgImage from '../assets/images/fondo.jpg'
 
+const items = [
+    {
+        icon: <FaLinkedinIn />,
+        iconRef: 'https://www.linkedin.com/in/javier-cordero-alvarez-042a16182/'
+    },
+    { icon: <FaGithub />, iconRef: 'https://github.com/javi-dev-79' }
+]
+
+const bgHome = {
+    backgroundImage: `linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(${bgImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+}
+
 const Header = () => {
-
-    const items = [
-        {
-            icon: <FaLinkedinIn />,
-            iconRef:
-                'https://www.linkedin.com/in/javier-cordero-alvarez-042a16182/'
-        },
-        { icon: <FaGithub />, iconRef: 'https://github.com/javi-dev-79' }
-    ]
-
-    const bgHome = {
-        backgroundImage: `linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-    };
-
     return (
-        <div
-            id='home'
-            className='mt-20 flex justify-center'
-            style={bgHome
-        
-            }
-        >
+        <div id='home' className='mt-20 flex justify-center' style={bgHome}>
             <div className='bg-custom-dark m-20 pb-10 rounded-xl mb-24 border-2 border-custom-green'>
                 <img
                     src={profilePhoto}

@@ -1,19 +1,19 @@
+const items1 = [
+    { text: 'Teléfono:' },
+    { text: 'Email:' },
+    { text: 'Dirección:' },
+    { text: 'Cargo:' },
+    { text: 'Empresa de prácticas FCT:' }
+]
+
+const items2 = [
+    { text: '618221089' },
+    { text: 'jacoal79@gmail.com' },
+    { text: 'Santa Teresa, 10 2ºB' },
+    { text: 'Junior Software Developer' }
+]
+
 const PersonalData = () => {
-    const items1 = [
-        { text: 'Teléfono:' },
-        { text: 'Email:' },
-        { text: 'Dirección:' },
-        { text: 'Cargo:' },
-        { text: 'Empresa de prácticas FCT:' }
-    ]
-
-    const items2 = [
-        { text: '618221089' },
-        { text: 'jacoal79@gmail.com' },
-        { text: 'Santa Teresa, 10 2ºB' },
-        { text: 'Junior Software Developer' }
-    ]
-
     return (
         <div className='mt-5 w-full md:w-1/2'>
             <h1 className='font-righteous text-3xl mb-10 font-bold'>

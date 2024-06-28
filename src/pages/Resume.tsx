@@ -1,5 +1,5 @@
-import Certifications from "./Certifications"
-import Education from "./Education"
+import Certifications from '../components/Certifications'
+import Education from '../components/Education'
 
 const Resume = () => {
     return (
