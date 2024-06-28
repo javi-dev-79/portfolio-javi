@@ -2,9 +2,10 @@ import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import NavBar from './components/NavBar'
-import PersonalInfo from './components/PersonalInfo/PersonalInfo'
-import Resume from './components/Resume/Resume'
-import Skills from './components/Skills/Skills'
+import PersonalInfo from './components/PersonalInfo'
+import Resume from './components/Resume'
+import Skills from './components/Skills'
+
 
 import './index.css'
 

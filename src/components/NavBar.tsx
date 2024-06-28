@@ -7,6 +7,13 @@ const NavBar = () => {
         setMenuOpen(!menuOpen)
     }
 
+    const items = [
+        { text: 'INICIO', itemRef: '#home' },
+        { text: 'SOBRE MI', itemRef: '#aboutme' },
+        { text: 'SKILLS', itemRef: '#myskills' },
+        { text: 'CURRICULUM', itemRef: '#resume' }
+    ]
+
     return (
         <div className='bg-[#1e2326] text-white'>
             <header className='container mx-auto p-4 flex justify-between items-center'>
@@ -19,42 +26,19 @@ const NavBar = () => {
                     <ul
                         className={`flex flex-col lg:flex-row lg:space-x-6 lg:space-y-0 space-y-4 ${menuOpen ? 'absolute right-0 mt-4 mr-4 p-4 bg-[#1e2326] rounded-lg' : ''}`}
                     >
-                        <li>
-                            <a
-                                href='#home'
-                                onClick={toggleMenu}
-                                className='hover:underline'
-                            >
-                                INICIO
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href='#aboutme'
-                                onClick={toggleMenu}
-                                className='hover:underline'
-                            >
-                                SOBRE MI
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href='#myskills'
-                                onClick={toggleMenu}
-                                className='hover:underline'
-                            >
-                                SKILLS
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href='#resume'
-                                onClick={toggleMenu}
-                                className='hover:underline'
-                            >
-                                CURRICULUM
-                            </a>
-                        </li>
+                        {items.map((item, index) => (
+                            <div key={index}>
+                                <li>
+                                    <a
+                                        href={item.itemRef}
+                                        onClick={toggleMenu}
+                                        className='hover:underline hover:text-[#1CB698] hover:font-bold'
+                                    >
+                                        {item.text}
+                                    </a>
+                                </li>
+                            </div>
+                        ))}
                     </ul>
                 </nav>
                 <div
