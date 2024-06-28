@@ -25,7 +25,7 @@ const Hobbies = () => {
             <div className='flex flex-wrap gap-4 max-w-[500px]'>
                 {hobbyList.map((hobby, index) => (
                     <div
-                        className='w-24 h-24 bg-[#252A2E] rounded-lg flex flex-col items-center justify-center transition-all duration-1000 hover:bg-[#1CB698]'
+                        className='w-24 h-24 bg-custom-dark rounded-lg flex flex-col items-center justify-center transition-all duration-1000 hover:bg-custom-green'
                         key={index}
                     >
                         <div className='text-4xl'>{hobby.icon}</div>

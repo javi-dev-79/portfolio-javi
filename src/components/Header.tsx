@@ -1,8 +1,10 @@
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
-import campo from '../assets/images/campo.jpg'
+import profilePhoto from '../assets/images/campo.jpg'
+import bgImage from '../assets/images/fondo.jpg'
 
 const Header = () => {
+
     const items = [
         {
             icon: <FaLinkedinIn />,
@@ -12,16 +14,25 @@ const Header = () => {
         { icon: <FaGithub />, iconRef: 'https://github.com/javi-dev-79' }
     ]
 
+    const bgHome = {
+        backgroundImage: `linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    };
+
     return (
         <div
             id='home'
-            className='mt-20 bg-[url(./assets/images/fondo.jpg)] inicio flex justify-center'
+            className='mt-20 flex justify-center'
+            style={bgHome
+        
+            }
         >
-            <div className='bg-[#1e2326] m-20 pb-10 rounded-xl mb-24 border-2 border-[#1CB698]'>
+            <div className='bg-custom-dark m-20 pb-10 rounded-xl mb-24 border-2 border-custom-green'>
                 <img
-                    src={campo}
+                    src={profilePhoto}
                     alt='image'
-                    className='m-10 border-8 border-[#1CB698] block w-4/5 mx-auto rounded-full'
+                    className='m-10 border-8 border-custom-green block w-4/5 mx-auto rounded-full'
                 />
                 <h1 className='text-5xl font-bold text-center font-righteous'>
                     JAVIER <br />
@@ -34,14 +45,13 @@ const Header = () => {
                         <div key={index}>
                             <a
                                 href={item.iconRef}
-                                className='no-underline border border-white rounded-full w-10 h-10 leading-10 mx-2.5 text-xl transition duration-300 hover:bg-[#1CB698] items-center justify-center flex'
+                                className='no-underline border border-white rounded-full w-10 h-10 leading-10 mx-2.5 text-xl transition duration-300 hover:bg-custom-green items-center justify-center flex'
                             >
                                 {item.icon}
                             </a>
                         </div>
                     ))}
                 </div>
-                
             </div>
         </div>
     )

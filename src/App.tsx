@@ -11,7 +11,7 @@ import './index.css'
 
 function App() {
     return (
-        <div className='font-work-sans text-white m-0 p-0 bg-[#1e2326]'>
+        <div className='font-work-sans text-white m-0 p-0 bg-custom-dark'>
             <NavBar />
             <Header />
             <AboutMe />

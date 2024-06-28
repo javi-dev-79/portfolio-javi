@@ -31,10 +31,10 @@ const SkillsItem = () => {
                             </span>
                             <div className="h-2 bg-[#131517] relative">
                                 <div
-                                    className={`absolute bg-[#1CB698] top-0 left-0 h-2 ${item.cssClass}`}
+                                    className={`absolute bg-custom-green top-0 left-0 h-2 ${item.cssClass}`}
                                     style={{ width: `${item.progress}%` }}
                                 >
-                                    <span className="absolute h-10 w-10 bg-[#1CB698] rounded-full flex items-center justify-center text-center top-[-17px] right-[-15px] text-sm">
+                                    <span className="absolute h-10 w-10 bg-custom-green rounded-full flex items-center justify-center text-center top-[-17px] right-[-15px] text-sm">
                                         {item.progress}%
                                     </span>
                                 </div>
@@ -54,12 +54,12 @@ const SkillsItem = () => {
                             <span className="font-bold block mb-2">
                                 {item2.text}
                             </span>
-                            <div className="h-2 bg-[#131517] relative">
+                            <div className="h-2 bg-custom-dark relative">
                                 <div
-                                    className={`absolute bg-[#1CB698] top-0 left-0 h-2 ${item2.cssClass}`}
+                                    className={`absolute bg-custom-green top-0 left-0 h-2 ${item2.cssClass}`}
                                     style={{ width: `${item2.progress}%` }}
                                 >
-                                    <span className="absolute h-10 w-10 bg-[#1CB698] rounded-full flex items-center justify-center text-center top-[-17px] right-[-15px] text-sm">
+                                    <span className="absolute h-10 w-10 bg-custom-green rounded-full flex items-center justify-center text-center top-[-17px] right-[-15px] text-sm">
                                         {item2.progress}%
                                     </span>
                                 </div>

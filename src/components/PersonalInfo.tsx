@@ -20,7 +20,7 @@ const PersonalInfo = () => {
                         <span className='z-10 relative flex items-center'>
                             Descargar CV <FaDownload className='ml-2' />
                         </span>
-                        <span className='bg-[#1CB698] absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 z-0'></span>
+                        <span className='bg-custom-green absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 z-0'></span>
                     </button>
                 </a>
             </div>
