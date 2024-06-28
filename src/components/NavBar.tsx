@@ -11,7 +11,7 @@ const NavBar = () => {
         <div className='bg-[#1e2326] text-white'>
             <header className='container mx-auto p-4 flex justify-between items-center'>
                 <div className='text-3xl font-bold text-[#1CB698]'>
-                    <a href='#navbar'>Javi</a>
+                    <a href='#'>Javi</a>
                 </div>
                 <nav
                     className={`lg:flex items-center lg:space-x-6 ${menuOpen ? 'block' : 'hidden'} lg:block`}
