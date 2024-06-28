@@ -1,11 +1,12 @@
 import { FaLinkedinIn } from 'react-icons/fa'
+import campo from '../assets/images/campo.jpg'
 
 const Header = () => {
     return (
         <div id='home' className='mt-20 bg-[url(./assets/images/fondo.jpg)] inicio flex justify-center'>
             <div className='bg-[#1e2326] m-20 rounded-xl mb-24'>
                 <img
-                    src='/src/assets/images/campo.jpg'
+                    src={campo}
                     alt='image'
                     className='m-10 border-8 border-[#1CB698] block w-4/5 mx-auto rounded-full'
                 />
