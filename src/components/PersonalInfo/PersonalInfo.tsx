@@ -1,6 +1,7 @@
 import Hobbies from './components/Hobbies'
 import PersonalData from './components/PersonalData'
 import { FaDownload } from 'react-icons/fa'
+import cv from '../../assets/pdf/CV-Javier.pdf'
 
 const PersonalInfo = () => {
     return (
@@ -12,7 +13,7 @@ const PersonalInfo = () => {
 
             <div className='flex'>
                 <a
-                    href='assets/pdf/CV-Javier.pdf'
+                    href={cv}
                     download
                     className='flex mx-auto mb-10'
                 >
