@@ -15,40 +15,7 @@ This repository contains the source code for my personal portfolio, created usin
 -   **Interactivity**: Smooth animations and transitions for a pleasant user experience.
 -   **Easy Customization**: Modular and well-organized code structure, making it easy to modify and extend the content.
 
-## Installation and Usage
+## Live preview
 
-Follow these steps to run the project on your local environment:
+[https://javicorderocv.netlify.app/](https://javicorderocv.netlify.app/)
 
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/your-username/your-repository.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd your-repository
-    ```
-
-3. Install the dependencies:
-
-    ```bash
-    npm install
-    ```
-
-4. Start the development server:
-
-    ```bash
-    npm run dev
-    ```
-
-5. Open your browser and go to [http://localhost:5173/](http://localhost:5173/) to see the portfolio in action.
-
-# Contributions
-
-Contributions are welcome. If you find any bugs or have any suggestions to improve the project, please feel free to contact me.
-
-# License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
