@@ -8,7 +8,7 @@ const items = [
         icon: <FaLinkedinIn />,
         iconRef: 'https://www.linkedin.com/in/javier-cordero-alvarez-042a16182/'
     },
-    { icon: <FaGithub />, iconRef: 'https://github.com/javi-dev-79' }
+    { icon: <FaGithub />, iconRef: 'https://github.com/javi-dev-79/portfolio-javi' }
 ]
 
 const bgHome = {
