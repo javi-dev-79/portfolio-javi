@@ -1,271 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Define una regla @font-face para usar la fuente */
-@font-face {
-  font-family: 'Righteous', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  /* Ajusta el peso según las variantes disponibles */
-  src: local('Righteous'), url('https://fonts.gstatic.com/s/righteous/v12/3y9uvSNEl8QjkQy5ZSfjRQ.woff2') format('woff2');
-  /* Ajusta la URL del archivo WOFF2 según corresponda */
+@layer base {
+    @font-face {
+        font-family: 'Righteous';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: url(../src/assets/fonts/Righteous-Regular.ttf) format(ttf);
+    }
 }
-
-/* Ahora puedes usar la clase 'font-righteous' en tu proyecto */
-.font-righteous {
-  font-family: 'Righteous', sans-serif;
-  /* Usa la fuente Righteous con un fallback a sans-serif */
-}
-
-html {
-  /* me permite deslizar cuando hago clic en los links del menu */
-  /* scroll-behavior: smooth; */
-  scroll-behavior: initial;
-  background: #1e2326;
-}
-
-.inicio {
-  background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
-    url(assets/images/fondo.jpg);
-  background-size: cover;
-}
-
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
+    width: 0%;
+    animation: 2s javascript forwards;
 }
 
 @keyframes javascript {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 70%;
-  }
+    100% {
+        width: 70%;
+    }
 }
 
 .htmlcss {
-  width: 0%;
-  animation: 2s htmlcss forwards;
+    width: 0%;
+    animation: 2s htmlcss forwards;
 }
 
 @keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 70%;
-  }
+    100% {
+        width: 70%;
+    }
 }
 
 .java {
-  width: 0%;
-  animation: 2s java forwards;
+    width: 0%;
+    animation: 2s java forwards;
 }
 
 @keyframes java {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 75%;
-  }
+    100% {
+        width: 75%;
+    }
 }
 
 .python {
-  width: 0%;
-  animation: 2s python forwards;
+    width: 0%;
+    animation: 2s python forwards;
 }
 
 @keyframes python {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 75%;
-  }
+    100% {
+        width: 75%;
+    }
 }
 
 .php {
-  width: 0%;
-  animation: 2s php forwards;
+    width: 0%;
+    animation: 2s php forwards;
 }
 
 @keyframes php {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 55%;
-  }
+    100% {
+        width: 55%;
+    }
 }
 
 .comunicacion {
-  width: 0%;
-  animation: 2s comunicacion forwards;
+    width: 0%;
+    animation: 2s comunicacion forwards;
 }
 
 @keyframes comunicacion {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 100%;
-  }
+    100% {
+        width: 100%;
+    }
 }
 
 .trabajo {
-  width: 0%;
-  animation: 2s trabajo forwards;
+    width: 0%;
+    animation: 2s trabajo forwards;
 }
 
 @keyframes trabajo {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 90%;
-  }
+    100% {
+        width: 90%;
+    }
 }
 
 .creatividad {
-  width: 0%;
-  animation: 2s creatividad forwards;
+    width: 0%;
+    animation: 2s creatividad forwards;
 }
 
 @keyframes creatividad {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 80%;
-  }
+    100% {
+        width: 80%;
+    }
 }
 
 .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
+    width: 0%;
+    animation: 2s dedicacion forwards;
 }
 
 @keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 85%;
-  }
+    100% {
+        width: 85%;
+    }
 }
 
 .autoaprendizaje {
-  width: 0%;
-  animation: 2s autoaprendizaje forwards;
+    width: 0%;
+    animation: 2s autoaprendizaje forwards;
 }
 
 @keyframes autoaprendizaje {
-  0% {
-    width: 0%;
-  }
+    0% {
+        width: 0%;
+    }
 
-  100% {
-    width: 94%;
-  }
-}
-
-
-/* SECCION RESPONSIVE */
-
-@media screen and (max-width:980px) {
-  nav {
-    display: none;
-  }
-
-  .nav-responsive {
-    display: block;
-  }
-
-  nav.responsive {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 75px;
-    background-color: #252A2E;
-    width: 180px;
-  }
-
-  nav.responsive ul {
-    display: block !important;
-  }
-
-  nav.responsive ul li {
-    border-bottom: 1px solid #fff;
-    padding: 10px 0;
-  }
-}
-
-@media screen and (max-width:700px) {
-  .sobremi .fila {
-    display: block;
-  }
-
-  .sobremi .fila .col {
-    width: fit-content;
-  }
-
-  .skills .fila {
-    display: block;
-  }
-
-  .skills .fila .col {
-    width: 100%;
-  }
-
-  .skills .fila .col .barra-skill {
-    width: 100%;
-  }
-
-  .curriculum .fila {
-    display: block;
-  }
-
-  .curriculum .fila .col {
-    width: 90%;
-  }
-
-  .curriculum .fila .derecha {
-    margin-left: 20px;
-  }
-
-  .portfolio .galeria {
-    display: block;
-    width: 100%;
-  }
-
-  .portfolio .galeria .proyecto {
-    max-width: 100%;
-  }
-
-  .portfolio .galeria .proyecto img {
-    width: 100%;
-  }
-
-  .contacto .fila {
-    display: block;
-  }
-
-  .contacto .fila .col {
-    width: 100%;
-  }
+    100% {
+        width: 94%;
+    }
 }
