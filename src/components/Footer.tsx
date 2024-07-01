@@ -1,17 +1,16 @@
-import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md'
 
 const Footer = () => {
     const scrollToTop = () => {
-        const scrollStep = -window.scrollY / (500 / 15); // 500 ms duration
+        const scrollStep = -window.scrollY / (500 / 15) // 500 ms duration
         const scrollInterval = setInterval(() => {
             if (window.scrollY !== 0) {
-                window.scrollBy(0, scrollStep);
+                window.scrollBy(0, scrollStep)
             } else {
-                clearInterval(scrollInterval);
+                clearInterval(scrollInterval)
             }
-        }, 15);
-    };
-    
+        }, 15)
+    }
 
     return (
         <div className='bg-custom-grey py-10 relative w-full'>
@@ -22,7 +21,7 @@ const Footer = () => {
                 <MdKeyboardDoubleArrowUp className='text-3xl' />
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer
