@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import { FaGamepad } from 'react-icons/fa'
 import { FaHeadphones } from 'react-icons/fa6'
 import { FaPlane } from 'react-icons/fa'
@@ -17,10 +19,12 @@ const hobbyList = [
 ]
 
 const Hobbies = () => {
+    const { t } = useTranslation()
+
     return (
         <div className='mt-5 w-full md:w-1/2'>
             <h1 className='font-righteous text-3xl mb-10 font-bold'>
-                Intereses
+                {t('Intereses')}
             </h1>
             <div className='flex flex-wrap gap-4 max-w-[500px]'>
                 {hobbyList.map((hobby, index) => (
@@ -29,7 +33,7 @@ const Hobbies = () => {
                         key={index}
                     >
                         <div className='text-4xl'>{hobby.icon}</div>
-                        <span>{hobby.text}</span>
+                        <span>{t(hobby.text)}</span>
                     </div>
                 ))}
             </div>

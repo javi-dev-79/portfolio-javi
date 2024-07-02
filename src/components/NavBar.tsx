@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { De, Es, Fr, Gb } from 'react-flags-select'
 import { GrLanguage } from 'react-icons/gr'
 
-const items = [
+const navLinks = [
     { text: 'INICIO', itemRef: '#home' },
     { text: 'SOBRE MI', itemRef: '#aboutme' },
     { text: 'SKILLS', itemRef: '#myskills' },
@@ -46,14 +46,14 @@ const NavBar = () => {
                     <ul
                         className={`flex flex-col lg:flex-row lg:space-x-6 lg:space-y-0 space-y-4 ${menuOpen ? 'absolute right-0 mt-4 mr-4 p-4 bg-custom-dark rounded-lg' : ''}`}
                     >
-                        {items.map((item, index) => (
+                        {navLinks.map((navLink, index) => (
                             <li key={index}>
                                 <a
-                                    href={item.itemRef}
+                                    href={navLink.itemRef}
                                     onClick={toggleMenu}
                                     className='hover:underline hover:text-custom-green hover:font-bold'
                                 >
-                                    {t(item.text)}
+                                    {t(navLink.text)}
                                 </a>
                             </li>
                         ))}
@@ -75,7 +75,7 @@ const NavBar = () => {
                         className='text-white'
                         onClick={() => setIsOpen(!isOpen)}
                     >
-                        <GrLanguage />
+                        <GrLanguage className='text-custom-green text-xl hover:text-2xl' />
                     </button>
                     {isOpen && (
                         <ul className='absolute right-0 mt-2 w-18 bg-custom-dark rounded-lg shadow-lg z-10'>

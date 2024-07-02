@@ -1,7 +1,24 @@
 {
-    "INICIO": "START",
+    "INICIO": "STARTSEITE",
     "SOBRE MI": "ÜBER MICH",
     "SKILLS": "FÄHIGKEITEN",
     "CURRICULUM": "LEBENSLAUF",
-    "Programador Junior": "Junior Entwickler"
+    "Programador Junior": "Junior Software Entwickler",
+    "Sobre Mí": "Über mich",
+    "Presentación": "Hallo Welt, ich bin Javier Cordero.",
+    "Descripción": " Seit meiner Kindheit interessiere ich mich leidenschaftlich für Computer und Programmierung. Seitdem ich diese faszinierende Welt entdeckt habe, bin ich tief in sie eingetaucht, und meine Leidenschaft für Programmierung ist im Laufe der Zeit nur noch gewachsen. Was mich am meisten daran begeistert, Programmierer zu sein, ist die Möglichkeit, meine Ideen zum Leben zu erwecken und technologische Lösungen zu schaffen, die das Leben der Menschen positiv beeinflussen. Ich liebe es, neue Herausforderungen anzugehen und komplexe Probleme mit meiner Kreativität und meinen technischen Fähigkeiten zu lösen. Meine Liebe zur Programmierung hat mich zu einer ständigen Lernmentalität geführt. Ich bin immer daran interessiert, neue Technologien zu lernen, verschiedene Programmiersprachen und Frameworks zu erkunden sowie die neuesten Trends in der Branche zu entdecken. Ich glaube, dass es wichtig ist, auf dem neuesten Stand zu bleiben, um ein wettbewerbsfähiger Profi zu sein und in dieser sich ständig weiterentwickelnden Branche weiter zu wachsen. Ich bin entschlossen, mich im Bereich der Programmierung zu entwickeln und zu wachsen. Ich suche nach einem stimulierenden Arbeitsumfeld, in dem ich mit anderen leidenschaftlichen Fachleuten zusammenarbeiten und von ihnen lernen kann. Ich bin bereit, neue Herausforderungen anzunehmen und meine Begeisterung und Hingabe in jedes Projekt einzubringen, an dem ich teilnehme. Wenn Sie jemanden suchen, der engagiert ist und eine natürliche Leidenschaft für die Programmierung hat, bin ich überzeugt, dass ich eine wertvolle Bereicherung für Ihr Team sein kann. Ich freue mich auf die Gelegenheit, zusammenzuarbeiten und in dieser spannenden Welt weiter zu wachsen!",
+    "Datos Personales": "Persönliche Daten",
+    "Teléfono": "Telefonnummer",
+    "Email": "E-Mail",
+    "Dirección": "Adresse",
+    "Cargo": "Position",
+    "Empresa de prácticas FCT": "Praktikumsunternehmen FCT",
+    "JUEGOS": "SPIELE",
+    "MUSICA": "MUSIK",
+    "VIAJAR": "REISEN",
+    "DEPORTE": "SPORT",
+    "LIBROS": "BÜCHER",
+    "COCHES": "AUTOS",
+    "FOTOS": "FOTOS",
+    "Intereses": "Interessen"
 }

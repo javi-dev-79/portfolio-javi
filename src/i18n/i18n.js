@@ -13,6 +13,7 @@ i18n.use(initReactI18next)
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
+        debug: true,
         resources: {
             en: {
                 translation: translationEN
@@ -29,7 +30,6 @@ i18n.use(initReactI18next)
         },
         lng: 'es', // Default language
         fallbackLng: 'es', // Fallback language if translation not found
-        debug: true,
         interpolation: {
             escapeValue: false // You don't need to escape variables inside translations
         }

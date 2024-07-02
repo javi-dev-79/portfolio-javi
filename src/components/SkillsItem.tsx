@@ -1,4 +1,4 @@
-const items = [
+const techSkills = [
     { text: 'Javascript', progress: '70', cssClass: 'javascript' },
     { text: 'HTML & CSS', progress: '70', cssClass: 'htmlcss' },
     { text: 'Java', progress: '75', cssClass: 'java' },
@@ -7,7 +7,7 @@ const items = [
     { text: 'Django', progress: '75', cssClass: 'python' }
 ]
 
-const items2 = [
+const softSkills = [
     { text: 'Comunicación', progress: '100', cssClass: 'comunicacion' },
     { text: 'Trabajo en Equipo', progress: '90', cssClass: 'trabajo' },
     { text: 'Creatividad', progress: '80', cssClass: 'creatividad' },
@@ -24,18 +24,18 @@ const SkillsItem = () => {
                     Technical Skills
                 </h3>
                 <div className=''>
-                    {items.map((item, index) => (
+                    {techSkills.map((techSkill, index) => (
                         <div key={index} className='mb-7'>
                             <span className='font-bold block mb-2'>
-                                {item.text}
+                                {techSkill.text}
                             </span>
                             <div className='h-2 bg-[#131517] relative'>
                                 <div
-                                    className={`absolute bg-custom-green top-0 left-0 h-2 ${item.cssClass}`}
-                                    style={{ width: `${item.progress}%` }}
+                                    className={`absolute bg-custom-green top-0 left-0 h-2 ${techSkill.cssClass}`}
+                                    style={{ width: `${techSkill.progress}%` }}
                                 >
                                     <span className='absolute h-10 w-10 bg-custom-green rounded-full flex items-center justify-center text-center top-[-17px] right-[-15px] text-sm'>
-                                        {item.progress}%
+                                        {techSkill.progress}%
                                     </span>
                                 </div>
                             </div>
@@ -49,18 +49,18 @@ const SkillsItem = () => {
                     Professional Skills
                 </h3>
                 <div className=''>
-                    {items2.map((item2, index2) => (
+                    {softSkills.map((softSkill, index2) => (
                         <div key={index2} className='mb-7'>
                             <span className='font-bold block mb-2'>
-                                {item2.text}
+                                {softSkill.text}
                             </span>
                             <div className='h-2 bg-custom-dark relative'>
                                 <div
-                                    className={`absolute bg-custom-green top-0 left-0 h-2 ${item2.cssClass}`}
-                                    style={{ width: `${item2.progress}%` }}
+                                    className={`absolute bg-custom-green top-0 left-0 h-2 ${softSkill.cssClass}`}
+                                    style={{ width: `${softSkill.progress}%` }}
                                 >
                                     <span className='absolute h-10 w-10 bg-custom-green rounded-full flex items-center justify-center text-center top-[-17px] right-[-15px] text-sm'>
-                                        {item2.progress}%
+                                        {softSkill.progress}%
                                     </span>
                                 </div>
                             </div>
