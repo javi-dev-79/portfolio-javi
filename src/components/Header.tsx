@@ -2,6 +2,7 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import profilePhoto from '../assets/images/campo.jpg'
 import bgImage from '../assets/images/fondo.jpg'
+import { useTranslation } from 'react-i18next'
 
 const items = [
     {
@@ -21,6 +22,7 @@ const bgHome = {
 }
 
 const Header = () => {
+    const { t } = useTranslation()
     return (
         <div id='home' className='mt-20 flex justify-center' style={bgHome}>
             <div className='bg-custom-dark m-20 pb-10 rounded-xl mb-24 border-2 border-custom-green'>
@@ -33,7 +35,7 @@ const Header = () => {
                     JAVIER <br />
                     CORDERO
                 </h1>
-                <h2 className='text-center mb-10'>Programador Junior</h2>
+                <h2 className='text-center mb-10'>{t('Programador Junior')}</h2>
 
                 <div className='flex justify-center items-center m-10 space-x-4'>
                     {items.map((item, index) => (
