@@ -17,6 +17,7 @@ const Footer = () => {
             <div
                 className='flex items-center justify-center w-12 h-12 bg-custom-green text-white absolute left-1/2 transform -translate-x-1/2 -top-6 rounded-full cursor-pointer'
                 onClick={scrollToTop}
+                data-testid='scroll-to-top-button'
             >
                 <MdKeyboardDoubleArrowUp className='text-3xl' />
             </div>
