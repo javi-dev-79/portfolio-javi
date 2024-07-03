@@ -36,29 +36,29 @@ const NavBar: React.FC = () => {
     const menuRef = useRef<HTMLDivElement>(null)
 
     React.useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
+        const handleClickOutside = () => {
+            setMenuOpen(false)
+            setLanguageMenuOpen(false)
+        }
+
+        const handleDocumentClick = (event: MouseEvent) => {
+            const navbar = document.getElementById('navbar')
+
             if (
-                languageMenuRef.current &&
-                !languageMenuRef.current.contains(event.target as Node) &&
-                languageMenuOpen
+                !event.target ||
+                !(event.target instanceof Element) ||
+                event.target.closest('#navbar') !== navbar
             ) {
-                setLanguageMenuOpen(false)
-            }
-            if (
-                menuRef.current &&
-                !menuRef.current.contains(event.target as Node) &&
-                menuOpen
-            ) {
-                setMenuOpen(false)
+                handleClickOutside()
             }
         }
 
-        document.addEventListener('mousedown', handleClickOutside)
+        document.addEventListener('mousedown', handleDocumentClick)
 
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside)
+            document.removeEventListener('mousedown', handleDocumentClick)
         }
-    }, [languageMenuOpen, menuOpen])
+    }, [])
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
@@ -90,7 +90,7 @@ const NavBar: React.FC = () => {
     }
 
     return (
-        <div className='bg-custom-dark text-white'>
+        <div id='navbar' className='bg-custom-dark text-white'>
             <header className='fixed top-0 w-full bg-custom-dark text-white z-50'>
                 <div className='container mx-auto p-4 flex justify-between items-center'>
                     <div className='flex items-center'>
