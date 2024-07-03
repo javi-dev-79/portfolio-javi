@@ -24,14 +24,14 @@ const NavBar = () => {
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
-        setIsOpen(false) // Asegúrate de que se cierre el menú de idiomas al abrir el menú principal
+        setIsOpen(false) // Make sure the language menu is closed when opening the main menu
     }
 
     const changeLanguage = (lng: string) => {
         console.log('Cambiando a idioma:', lng)
         i18n.changeLanguage(lng)
-        setMenuOpen(false) // Cierra el menú principal después de cambiar el idioma
-        setIsOpen(false) // Cierra el menú de idiomas después de cambiar el idioma
+        setMenuOpen(false) // Close the main menu after changing the language
+        setIsOpen(false) // Close the language menu after changing the language
     }
 
     return (
