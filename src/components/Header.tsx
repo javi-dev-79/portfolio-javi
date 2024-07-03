@@ -35,7 +35,9 @@ const Header = () => {
                     JAVIER <br />
                     CORDERO
                 </h1>
-                <h2 className='text-center mb-10'>{t('Programador Junior')}</h2>
+                <h2 className='text-center mb-10 mt-4'>
+                    {t('Programador Junior')}
+                </h2>
 
                 <div className='flex justify-center items-center m-10 space-x-4'>
                     {rrssIcons.map((rrssIcon, index) => (

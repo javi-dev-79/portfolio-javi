@@ -95,7 +95,7 @@ const NavBar = () => {
                         onClick={toggleMenu}
                     >
                         <i
-                            className={`fa-solid fa-${menuOpen ? 'times' : 'bars'} text-lg`}
+                            className={`fa-solid fa-${menuOpen ? 'times' : 'bars'} text-lg cursor-pointer`}
                         >
                             ☰
                         </i>
