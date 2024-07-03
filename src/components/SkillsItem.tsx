@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 const techSkills = [
     { text: 'Javascript', progress: '70', cssClass: 'javascript' },
     { text: 'HTML & CSS', progress: '70', cssClass: 'htmlcss' },
@@ -17,11 +19,13 @@ const softSkills = [
 ]
 
 const SkillsItem = () => {
+    const { t } = useTranslation()
+
     return (
         <div className='md:flex max-w-[1200px] mx-auto'>
             <div className='md:w-1/2 w-full px-4'>
                 <h3 className='text-2xl font-righteous mb-6 text-center md:text-left'>
-                    Technical Skills
+                    {t('Habilidades Técnicas')}
                 </h3>
                 <div className=''>
                     {techSkills.map((techSkill, index) => (
@@ -46,13 +50,13 @@ const SkillsItem = () => {
 
             <div className='md:w-1/2 w-full px-4 mt-10 md:mt-0'>
                 <h3 className='text-2xl font-righteous mb-6 text-center md:text-left'>
-                    Professional Skills
+                    {t('Habilidades Profesionales')}
                 </h3>
                 <div className=''>
                     {softSkills.map((softSkill, index2) => (
                         <div key={index2} className='mb-7'>
                             <span className='font-bold block mb-2'>
-                                {softSkill.text}
+                                {t(softSkill.text)}
                             </span>
                             <div className='h-2 bg-custom-dark relative'>
                                 <div
