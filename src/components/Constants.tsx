@@ -1,4 +1,4 @@
-const items = [
+const learningPaths = [
     {
         area: 'Back Developer',
         companies: [
@@ -185,4 +185,4 @@ const items = [
     }
 ]
 
-export default items
+export default learningPaths

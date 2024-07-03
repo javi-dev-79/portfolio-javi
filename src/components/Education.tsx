@@ -1,6 +1,7 @@
 import EducationItem from './EducationItem'
+import { useTranslation } from 'react-i18next'
 
-const items = [
+const formations = [
     {
         title: 'Desarrollo de Aplicaciónes Multiplataforma',
         institution: 'IES El Rincón',
@@ -43,16 +44,18 @@ const items = [
 ]
 
 const Education = () => {
+    const { t } = useTranslation()
+
     return (
         <div className='md:w-1/2 border-r-2 border-custom-grey m-5'>
-            <h3 className='text-3xl font-righteous mb-10'>Educación</h3>
-            {items.map((item, index) => (
+            <h3 className='text-3xl font-righteous mb-10'>{t('Educación')}</h3>
+            {formations.map((formation, index) => (
                 <EducationItem
                     key={index}
-                    title={item.title}
-                    institution={item.institution}
-                    period={item.period}
-                    description={item.description || ''}
+                    title={formation.title}
+                    institution={formation.institution}
+                    period={formation.period}
+                    description={formation.description || ''}
                 />
             ))}
         </div>

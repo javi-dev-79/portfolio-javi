@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 interface CertificationItemProps {
     area: string
     companies: {
@@ -13,13 +15,15 @@ export default function CCertificationItem({
     area,
     companies
 }: CertificationItemProps) {
+    const { t } = useTranslation()
+
     return (
         <div className='flex items-center mb-10'>
             <div className='relative flex-shrink-0 h-0.5 bg-custom-green w-10'>
                 <div className='absolute left-0 bottom-[-5px] h-2.5 w-2.5 rounded-full bg-custom-green'></div>
             </div>
             <div className='bg-custom-grey border-l-2 border-custom-green p-5 w-full'>
-                <h4 className='text-xl mb-4 font-bold'>{area}</h4>
+                <h4 className='text-xl mb-4 font-bold'>{t(area)}</h4>
                 {companies.map((company, index) => (
                     <div key={index}>
                         <h5 className='text-lg text-custom-green font-bold'>
@@ -32,7 +36,7 @@ export default function CCertificationItem({
                                 </span>
                                 {period.courses.map((course, index3) => (
                                     <p key={index3} className='mb-1 text-sm'>
-                                        {course}
+                                        {t(course)}
                                     </p>
                                 ))}
                                 <p className='mb-4'></p>
