@@ -3,6 +3,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { useTranslation } from 'react-i18next'
 
 const projects = [
     {
@@ -20,6 +21,9 @@ const projects = [
 ]
 
 const Projects = () => {
+
+    const { t } = useTranslation()
+    
     return (
         <div id='projects' className='max-w-[1200px] mx-auto mb-16 text-center'>
             <h2 className='text-5xl font-bold text-center font-righteous p-5 m-10'>
@@ -59,13 +63,16 @@ const Projects = () => {
                 ))}
             </Swiper>
 
+            <p className='text-sm font-bold text-center font-righteous m-4 hover:text-[#1CB698]'>
+                {t('Hacer clic en la imagen para acceder al repositorio')}
+            </p>
             <a
                 href='https://github.com/javi-dev-79/portfolio-javi'
                 target='_blank'
                 rel='noopener noreferrer'
             >
-                <p className='text-sm font-bold text-center font-righteous p-5 m-10 hover:text-[#1CB698]'>
-                    Repositorio de este proyecto
+                <p className='text-sm font-bold text-center font-righteous m-10 hover:text-[#1CB698]'>
+                    {t('Repositorio de este proyecto')}
                 </p>
             </a>
         </div>
