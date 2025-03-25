@@ -84,5 +84,7 @@
     "Curso de Docker": "Docker Course",
     "Curso de comandos básicos para la Terminal": "Basic Command Line Commands Course",
     "Curso Profesional de Base de Datos": "Professional Database Course",
-    "Curso Profesional de Docker": "Professional Docker Course"
+    "Curso Profesional de Docker": "Professional Docker Course",
+    "Hacer clic en la imagen para acceder al repositorio": "Click on the image to access the repository",
+    "Repositorio de este proyecto": "Repository of this project"
 }
