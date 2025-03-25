@@ -9,6 +9,7 @@ import NavBar from './components/NavBar'
 import PersonalInfo from './pages/PersonalInfo'
 import Resume from './pages/Resume'
 import Skills from './pages/Skills'
+import Projects from './components/Projects.tsx'
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <PersonalInfo />
                 <Skills />
                 <Resume />
+                <Projects />
                 <Footer />
             </div>
         </I18nextProvider>

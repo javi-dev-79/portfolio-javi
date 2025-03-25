@@ -1,6 +1,49 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #1CB698 !important;
+    top: 45% !important;
+    transform: translateY(-50%) !important;
+    width: 30px !important;
+    height: 30px !important;
+    font-weight: bolder !important;
+}
+
+.swiper-button-prev {
+    left: 25px !important;
+}
+
+.swiper-button-next {
+    right: 25px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 24px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #1CB698 !important;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #1CB698 !important;
+    opacity: 1;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px !important;
+    text-shadow: 0 0 2px #1CB698, 0 0 2px #1CB698;
+}
 
 @layer base {
     @font-face {
@@ -8,19 +51,19 @@
         font-style: normal;
         font-display: swap;
         font-weight: 400;
-        src: url(../src/assets/fonts/Righteous-Regular.ttf) format(ttf);
+        src: url(../src/assets/fonts/Righteous-Regular.ttf) format('truetype');
     }
 }
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .javascript {
-    width: 0%;
+    width: 0;
     animation: 2s javascript forwards;
 }
 
 @keyframes javascript {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -29,13 +72,13 @@
 }
 
 .htmlcss {
-    width: 0%;
+    width: 0;
     animation: 2s htmlcss forwards;
 }
 
 @keyframes htmlcss {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -44,13 +87,13 @@
 }
 
 .java {
-    width: 0%;
+    width: 0;
     animation: 2s java forwards;
 }
 
 @keyframes java {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -59,13 +102,13 @@
 }
 
 .python {
-    width: 0%;
+    width: 0;
     animation: 2s python forwards;
 }
 
 @keyframes python {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -74,13 +117,13 @@
 }
 
 .php {
-    width: 0%;
+    width: 0;
     animation: 2s php forwards;
 }
 
 @keyframes php {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -89,13 +132,13 @@
 }
 
 .comunicacion {
-    width: 0%;
+    width: 0;
     animation: 2s comunicacion forwards;
 }
 
 @keyframes comunicacion {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -104,13 +147,13 @@
 }
 
 .trabajo {
-    width: 0%;
+    width: 0;
     animation: 2s trabajo forwards;
 }
 
 @keyframes trabajo {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -119,13 +162,13 @@
 }
 
 .creatividad {
-    width: 0%;
+    width: 0;
     animation: 2s creatividad forwards;
 }
 
 @keyframes creatividad {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -134,13 +177,13 @@
 }
 
 .dedicacion {
-    width: 0%;
+    width: 0;
     animation: 2s dedicacion forwards;
 }
 
 @keyframes dedicacion {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {
@@ -149,13 +192,13 @@
 }
 
 .autoaprendizaje {
-    width: 0%;
+    width: 0;
     animation: 2s autoaprendizaje forwards;
 }
 
 @keyframes autoaprendizaje {
     0% {
-        width: 0%;
+        width: 0;
     }
 
     100% {

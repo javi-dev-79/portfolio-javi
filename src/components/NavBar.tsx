@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Es, Gb, Fr, De } from 'react-flags-select'
+import { De, Es, Fr, Gb } from 'react-flags-select'
 import { GrLanguage } from 'react-icons/gr'
 
 interface NavLink {
@@ -17,7 +17,8 @@ const navLinks: NavLink[] = [
     { text: 'INICIO', itemRef: '#home' },
     { text: 'SOBRE MI', itemRef: '#aboutme' },
     { text: 'SKILLS', itemRef: '#myskills' },
-    { text: 'CURRICULUM', itemRef: '#resume' }
+    { text: 'CURRICULUM', itemRef: '#resume' },
+    { text: 'PROYECTOS', itemRef: '#projects' }
 ]
 
 const countries: Country[] = [
