@@ -1,5 +1,4 @@
 import { FaDownload } from 'react-icons/fa'
-import cv from '../assets/pdf/CV-Javier.pdf'
 import Hobbies from '../components/Hobbies'
 import PersonalData from '../components/PersonalData'
 import { useTranslation } from 'react-i18next'
@@ -15,7 +14,7 @@ const PersonalInfo = () => {
             </div>
 
             <div className='flex'>
-                <a href={cv} download className='flex mx-auto mb-10'>
+                <a href="pdf/CV-Javier.pdf" download="CV-Javier.pdf" className="flex mx-auto mb-10">
                     <button
                         type='button'
                         className='relative overflow-hidden p-2 border border-white mx-auto my-10 px-10 py-2 min-w-32 text-center group cursor-pointer'
